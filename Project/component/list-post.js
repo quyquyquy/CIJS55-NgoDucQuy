@@ -13,11 +13,7 @@ class ListPost extends HTMLElement {
     this.renderHtml()
   }
   async renderHtml() {
-    const res = 
-    await firebase
-    .firestore()
-    .collection('posts')
-    .get()
+    const res = await firebase.firestore().collection('posts').get()
     const listPost = getDataFromDocs(res)
     // listPost[0].user.get()
     let html = ''

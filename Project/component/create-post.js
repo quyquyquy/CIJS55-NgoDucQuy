@@ -37,6 +37,7 @@ class CreatePost extends HTMLElement {
       if (content.trim() === "") {
         alert("Vui lòng nhập nội dung bài viết");
       }
+      else{
       const data = {
         createdBy: currentUser.email,
         createdAt: new Date().toISOString(),
@@ -45,7 +46,8 @@ class CreatePost extends HTMLElement {
       };
       await firebase.firestore().collection("posts").add(data);
       this._shadowDom.getElementById("content").value = "";
-    });
+      alert("Đăng bài thành công")
+    }});
   }
 }
 window.customElements.define("create-post", CreatePost);
