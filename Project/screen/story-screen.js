@@ -4,18 +4,10 @@ class StoryScreen extends HTMLElement {
         super();
         this._shadowDom = this.attachShadow({ mode: 'open' });
         this._shadowDom.innerHTML =`
-        <style>
-            .container{
-                text-align: center;
-            }
-            #story{
-                color: violet;
-            }
-        </style>
-        <div class="container">
-            <div id="story"><h1>STORY</h1></div>
-            <div id="user">Hello  ${currentUser.displayName}</div>
-        </div>
+        <story-header></story-header>
+        <create-post></create-post>
+        <list-post></list-post>
+        <list-item></list-item>
         `
     }
 }

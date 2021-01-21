@@ -41,7 +41,7 @@ const style = `<style>
 </style>
 `
 import {redirect} from "../index.js"
-import {validateEmail} from "../component/checkValidEmail.js"
+import {validateEmail} from "../checkValidEmail.js"
 class RegisterScreen extends HTMLElement{
     constructor() {
         super()

@@ -1,6 +1,6 @@
 
 import {redirect} from "../index.js"
-import {validateEmail} from "../component/checkValidEmail.js"
+import {validateEmail} from "../checkValidEmail.js"
 class LoginScreen extends HTMLElement {
     constructor() {
         super();
