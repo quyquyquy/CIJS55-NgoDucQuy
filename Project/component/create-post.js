@@ -7,9 +7,9 @@ const style = `
   }
   #create-post textarea {
     width: 100%;
-    border: 1px solid #dbdbdb;
+    border: 2px solid black;
     border-radius: 10px;
-    outline: none;
+    
   }
   .post {
     background-color: #1976D1;
