@@ -1,0 +1,20 @@
+.container{
+
+    
+    margin-left: 25%;
+    text-align: center;
+    justify-content: center;
+    width: 50%;
+  
+
+}
+.headder{
+    height: 50px;
+    border-radius: 10px;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 30px;
+    background-color: rgb(241, 188, 89);
+}
+#result{
+    width: 240px;
+}
